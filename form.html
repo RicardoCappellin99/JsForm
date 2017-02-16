@@ -1,2 +1,98 @@
 <html>
+ <head>
+  <title>Form HTML</title>
+ <style>
+  td {
+   text-align: left;
+   width: 50%; 
+   height: 50%; 
+  }
+  
+  textarea {
+   max-width: 180px;
+   max-height: 75px;
+   min-width: 180px;
+   min-height: 75px;
+  }
+  
+  .areared {
+	border: red solid 1px;
+  }
+  
+  .areablack {
+	border: black solid 1px;
+  }
+ </style>
+ </head>
+ <body style="margin-top: 50px;">
+  <form name="formlogin">
+   <div>
+    <div>
+     Dati per la registrazione
+    </div>
+    <div>
+     <p>Nome</p>
+     <input type="text" name="nome" id="nome" class="areablack">
+    </div>
+    <div>
+     <!--sono arrivato qua--><p>Cognome</p> 
+     <input type="text" name="cognome" id="cognome" class="areablack">
+	</div>
+     <td>Nickname</td>
+     <td><input type="text" name="nickname" id="nickname" class="areablack"></td>
+    </tr>
+    <tr>
+     <td>E-mail </td>
+     <td><input type="text" name="email" id="email" class="areablack"></td>
+    </tr>
+    <tr>
+     <td>Password</td>
+     <td><input type="password" name="password1" id="password1" class="areablack"></td>
+    </tr>
+    <tr>
+     <td>Conferma password</td>
+     <td><input type="text" name="confPassword" id="confPassword" class="areablack"></td>
+    </tr>
+    <tr>
+     <td>Indirizzo</td>
+     <td><input type="text" name="indirizzo" id="indirizzo" class="areablack"></td>
+    </tr>
+    <tr>
+     <td>Sesso</td>
+     <td>Maschio <input type="radio" name="sesso" value="Maschio" checked> Femmina <input type="radio" name="sesso" value="Femmina"></td>
+    </tr>
+    <tr>
+     <td>Data di nascita</td>
+     <td><input type="date" name="dataNascita" id="dataNascita" class="areablack"></td>
+    </tr>
+    <tr>
+     <td>Paese</td>
+     <td>
+      <select name="paese" id="paese" class="areablack" >
+      <option>--Seleziona il tuo paese--</option>
+      <option value="Padova">Padova</option>
+      <option value="Milano">Milano</option>
+      <option value="Udine">Udine</option>
+      <option value="Bologna">Bologna</option>
+      </select>
+     </td>
+    </tr>
+    <tr>
+     <td>Citazione(Opzionale)</td>
+     <td>
+      <textarea name="citazione" rows="5" cols="23"></textarea>
+     </td>
+    </tr>
+    <tr>
+	
+     <td colspan="2"><input type="button" value="Conferma" name="registrazione" onClick="invia()"></td>
+	 
+    </tr>
+	<tr >
+	<td colspan="2" ><div ><p id="errori"></p></div></td>
+	 </tr>
+   </div>
+  </form>
+  <script language="javascript" src="Form.js"></script>
+ </body>
 </html>
